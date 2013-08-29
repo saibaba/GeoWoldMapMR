@@ -30,3 +30,10 @@ MongoDb requires map and reduce functions to follow some specific conventions:
 2. the order of elements in the input to reduce function must not matter
 3. reduce will not be called at all if there is only one instance of value for a key (map ever emitted only one time for given key)
 4. reduce must be idempotent - reduce could be called multiple times for the same key (of courese, values will be whatever returned in the previous invocation)
+
+
+Reference
+=========
+1. MongoDB docs
+2. <a href="http://www.mongovue.com/2010/11/03/yet-another-mongodb-map-reduce-tutorial/" target="_blank">http://www.mongovue.com/2010/11/03/yet-another-mongodb-map-reduce-tutorial/</a>
+
