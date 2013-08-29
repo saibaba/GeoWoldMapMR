@@ -36,4 +36,4 @@ Reference
 =========
 1. MongoDB docs
 2. <a href="http://www.mongovue.com/2010/11/03/yet-another-mongodb-map-reduce-tutorial/" target="_blank">http://www.mongovue.com/2010/11/03/yet-another-mongodb-map-reduce-tutorial/</a>
-
+3. <a href="https://groups.google.com/d/msg/mongodb-user/b7oTglb8GnI/bCR6mQY2dVYJ" target="_blank">utf8 conversion</a>
