@@ -5,13 +5,21 @@ Instructions
 2. Get GeoWolrdMap free cities data from : http://www.geobytes.com/GeoWorldMap.zip 
 3. Unzip and you will see: cities.txt
 4. Some data in cities.txt contains special chars but not in UTF-8 format, so convert to utf
-    iconv -f ISO-8859-1 -t UTF-8 cities.txt > utf8_cities.txt
+      <pre><code>
+      iconv -f ISO-8859-1 -t UTF-8 cities.txt > utf8_cities.txt
+      </code></pre>
 5. import into mongo:
-   mongoimport -v --drop  -h host:port -u username -p password --db databasename --collection cities --type csv --file utf8_cities.txt --headerline
+      <pre><code>
+      mongoimport -v --drop  -h host:port -u username -p password --db databasename --collection cities --type csv --file utf8_cities.txt --headerline
+    </code></pre>
 6. Run your map-reduce jobs. One example:
-   time mongo host:port/dbname --username username --password password closest.js
+      <pre><code>
+      time mongo host:port/dbname --username username --password password closest.js
+      </code></pre>
 7. Another example:
-   mongo host:port/dbname --username username --password password count_cities.js
+      <pre><code>
+      mongo host:port/dbname --username username --password password count_cities.js
+      </code></pre>
 
 Notes
 =====
